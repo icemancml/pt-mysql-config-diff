@@ -24,6 +24,7 @@ var (
 	cnfs         = app.Arg("cnf", "Config file or DNS in the form h=host,P=port,u=user,p=pass").Strings()
 	outputFormat = app.Flag("format", "Output format: text or json.").Default("text").String()
 	version      = app.Flag("version", "Show version and exit").Bool()
+	pretty       = app.Flag("pretty", "Show big numbers in human readable format").Bool()
 
 	Version   = "0.0.0."
 	Commit    = "<sha1>"
